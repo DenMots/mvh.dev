@@ -59,8 +59,8 @@ function TableOfContents({ items = [] }: TableOfContensProps) {
           className={clsx('text-slate-700', 'dark:text-slate-300')}
           id="table-of-contents"
         >
-          <span className={clsx('lg:hidden', 'xl:inline')}>Table of </span>
-          Contents
+          Inhoud
+          
         </h2>
         <m.div
           initial={{ x: 16, opacity: 0 }}

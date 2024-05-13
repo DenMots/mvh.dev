@@ -1,13 +1,8 @@
 import clsx from 'clsx';
 
-import { CodeIcon, HeartIcon, SparklesIcon } from '@/components/Icons';
-
-import CleanIntuitive from '@/contents/index/CleanIntuitive';
-import DetailOriented from '@/contents/index/DetailOriented';
+import { EyeIcon,HashtagIcon, HeartIcon } from '@/components/Icons';
 import FeaturedCard from '@/contents/index/FeaturedCard';
 import Header from '@/contents/index/Header';
-import PrettyOptimized from '@/contents/index/PrettyOptimized';
-import Quote from '@/contents/index/Quote';
 
 function FeaturedCardSection() {
   return (
@@ -21,11 +16,11 @@ function FeaturedCardSection() {
                 'dark:bg-amber-900'
               )}
             >
-              <SparklesIcon className={clsx('h-5 w-5 text-white')} />
+              <HashtagIcon className={clsx('h-5 w-5 text-white')} />
             </div>
           }
-          title="Clean & Intuitive"
-          desc="Keep the UI clean with a modern touch without compromising UX."
+          title="Oplossingsgericht"
+          desc="Ik focus niet op problemen, maar op creatieve oplossingen. Mijn vastberadenheid en enthousiasme voor mijn werk stellen me in staat om consequent innovatieve manieren te vinden om uitdagingen aan te pakken. Dit zorgt ervoor dat ik aan elk project blijvende waarde toevoeg."
         />
         <FeaturedCard
           icon={
@@ -38,8 +33,8 @@ function FeaturedCardSection() {
               <HeartIcon className={clsx('h-5 w-5 text-white')} />
             </div>
           }
-          title="Detail Oriented"
-          desc="Awareness to ease of access, UI consistency, and improved UX."
+          title="Detailgericht"
+          desc="Mijn diepe interesse in design en mijn streven naar ontwikkeling drijven mijn zoektocht naar vernieuwende oplossingen. Elk obstakel zie ik als een kans om te leren en te evolueren, wat mij een onmisbaar lid maakt van elk creatief team."
         />
         <FeaturedCard
           icon={
@@ -49,22 +44,12 @@ function FeaturedCardSection() {
                 'dark:bg-sky-900'
               )}
             >
-              <CodeIcon className={clsx('h-5 w-5 text-white')} />
+              <EyeIcon className={clsx('h-5 w-5 text-white')} />
             </div>
           }
-          title="Pretty & Optimized"
-          desc="Writing clean code is a top priority while keeping it as optimized as possible."
+          title="Groeistrateeg"
+          desc="Met een sterke groeimindset implementeer ik data-gedreven strategieën en innovatieve marketingtechnieken. Dit stelt mij in staat om tastbare verbeteringen te bewerkstelligen en de groei van het bedrijf te versnellen."
         />
-      </div>
-    </div>
-  );
-}
-
-function QuoteSection() {
-  return (
-    <div className={clsx('content-wrapper')}>
-      <div className={clsx('flex items-center justify-center py-8')}>
-        <Quote />
       </div>
     </div>
   );
@@ -77,18 +62,7 @@ function IndexContents() {
       <div className={clsx('hidden', 'lg:-mt-16 lg:mb-24 lg:block')}>
         <FeaturedCardSection />
       </div>
-      <div className={clsx('-mt-12 mb-12', 'md:mt-0 md:mb-24')}>
-        <QuoteSection />
-      </div>
-      <section className={clsx('mb-12', 'lg:mb-24')}>
-        <CleanIntuitive />
-      </section>
-      <section className={clsx('mb-12', 'lg:mb-24')}>
-        <DetailOriented />
-      </section>
-      <section className={clsx('mb-12', 'lg:mb-24')}>
-        <PrettyOptimized />
-      </section>
+
     </>
   );
 }

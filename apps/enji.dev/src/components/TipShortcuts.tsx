@@ -10,11 +10,11 @@ const shortcuts: Array<{
   keys: Array<string>;
 }> = [
   {
-    title: 'Open Quick Access',
+    title: 'Open snelle toegang',
     keys: ['Q'],
   },
   {
-    title: 'Close Quick Access',
+    title: 'Sluit snelle toegang',
     keys: ['Q', 'Esc'],
   },
   {
@@ -49,10 +49,10 @@ function TipShortcuts() {
     >
       <div className={clsx('mb-4 flex items-center gap-4 text-xl font-bold')}>
         <KeyboardIcon className={clsx('h-8 w-8')} />
-        TIP: Shortcuts
+        TIP: sneltoetsen
       </div>
       <p className={clsx('mb-4 text-sm text-slate-700', 'dark:text-slate-400')}>
-        Navigate the site with ease using keyboard shortcuts.
+        Navigeer door de website door middel van sneltoetsen.
       </p>
       <div className={clsx('flex flex-col text-[13px]')}>
         {shortcuts.map(({ title, keys }) => (

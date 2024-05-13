@@ -1,5 +1,4 @@
 import clsx from 'clsx';
-
 import type { ReactElement } from 'react';
 
 interface FeaturedCardProps {
@@ -38,7 +37,7 @@ function FeaturedCard({ icon, title, desc }: FeaturedCardProps) {
           <div className={clsx('-m-2')}>{icon}</div>
           <div
             className={clsx(
-              'truncate py-2 pr-4 text-sm font-bold text-slate-700',
+              'truncate py-2 pr-4 text-m font-bold text-slate-700',
               'dark:text-slate-300'
             )}
           >
@@ -48,7 +47,7 @@ function FeaturedCard({ icon, title, desc }: FeaturedCardProps) {
       </div>
       <div
         className={clsx(
-          'p-4 pl-12 text-sm text-slate-600',
+          'p-4 pl-12 text-m text-slate-600',
           'dark:text-slate-400'
         )}
       >

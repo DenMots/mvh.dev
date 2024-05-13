@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 
 import WithTableOfContentsMock from '@/components/layouts/WithTableOfContentsMock';
-import Reactions from '@/components/Reactions';
+import Reactions from '../Reactions.1';
 
 import type { ReactionsProps } from '@/components/Reactions';
 

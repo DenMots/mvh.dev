@@ -3,6 +3,24 @@ import { m, useReducedMotion } from 'framer-motion';
 import Link from 'next/link';
 
 import { DocumentIcon } from '@/components/Icons';
+import SectionTitle from '@/components/sections/SectionTitle';
+
+function WijntjeDoen() {
+  return (
+    <header className={clsx('mb-8')}>
+      <SectionTitle
+        title=""
+        caption="Wijntje doen?"
+        description="Of een koffietje?" 
+      />
+    </header>
+  );
+}
+
+
+
+
+
 
 const animation = {
   hide: {
@@ -141,5 +159,4 @@ function HeaderCta({
     </m.div>
   );
 }
-
-export default HeaderCta;
+export default WijntjeDoen;

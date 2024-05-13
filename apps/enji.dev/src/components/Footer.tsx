@@ -1,12 +1,8 @@
-import clsx from 'clsx';
-import Link from 'next/link';
-
 import {
   ExternalLink,
-  FigmaIcon,
-  GitHubIcon,
-  TwitterIcon,
 } from '@/components/Icons';
+import clsx from 'clsx';
+import Link from 'next/link';
 
 import dayjs from '@/utils/dayjs';
 
@@ -109,50 +105,19 @@ function FooterDescription() {
           'dark:text-slate-400'
         )}
       >
-        About Me
+        Hey!
       </div>
       <p className={clsx('mb-4 font-normal leading-relaxed')}>
-        I&apos;m Enji, a <strong>front-end developer</strong> who loves
-        intuitive, clean and modern UI design.
+        Ik ben Marit! Een technisch, creatief en data-gedreven <strong>mediavormgever</strong>.
+        Creëert unieke designs die écht converteren.
       </p>
-      <ul className={clsx('-ml-2 flex gap-1')}>
-        <li>
-          <a
-            href="https://twitter.com/enjidev"
-            target="_blank"
-            rel="noreferrer nofollow"
-            className={clsx('flex h-9 w-9 items-center justify-center')}
-            aria-label="My Twitter profile"
-            title="My Twitter profile"
-          >
-            <TwitterIcon className={clsx('h-5 w-5')} />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/enjidev"
-            target="_blank"
-            rel="noreferrer nofollow"
-            className={clsx('flex h-9 w-9 items-center justify-center')}
-            aria-label="My GitHub profile"
-            title="My GitHub profile"
-          >
-            <GitHubIcon className={clsx('h-5 w-5')} />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://figma.com/@enjidev"
-            target="_blank"
-            rel="noreferrer nofollow"
-            className={clsx('flex h-9 w-9 items-center justify-center')}
-            aria-label="My Figma profile"
-            title="My Figma profile"
-          >
-            <FigmaIcon className={clsx('h-5 w-5')} />
-          </a>
-        </li>
-      </ul>
+      <p className={clsx('mb-4 font-normal leading-relaxed')}>
+      <p>Enthousiast  |  Teamplayer  |  Leergierig  |  Hands-on </p>
+      </p>
+      <p className={clsx('mb-4 font-normal leading-relaxed')}>
+      <p>5+ jaar ervaring  |  UX/UI  |  Data-gedreven  |  Photoshop  |  Illustrator  |  HTML/CSS/JS </p>
+      </p>
+      
     </div>
   );
 }
@@ -182,7 +147,7 @@ function Footer() {
                   title="Work"
                   links={[
                     { title: 'Contact', href: '/work/contact' },
-                    { title: 'Experience', href: '/work/experience' },
+                    { title: 'Werkervaring', href: '/work/experience' },
                     {
                       title: 'Services',
                       href: '/work/services',

@@ -25,7 +25,7 @@ function HeaderTitle() {
         animate={animation.show}
         transition={{ delay: 0.1 }}
       >
-        hi!
+        hey Vizien, welkom!
         <m.div
           initial={{
             opacity: 0,
@@ -68,11 +68,11 @@ function HeaderTitle() {
           animate={animation.show}
           transition={{ delay: 0.2 }}
         >
-          I&apos;m{' '}
+          Bij mijn{' '}
           <strong className={clsx('text-accent-600', 'dark:text-accent-500')}>
-            Enji
+            CV & portfolio
           </strong>{' '}
-          Kusnadi,{' '}
+          {' '}
         </m.span>
         <m.h1
           className={clsx(
@@ -84,17 +84,17 @@ function HeaderTitle() {
           animate={animation.show}
           transition={{ delay: 0.3 }}
         >
-          <span className={clsx('lowercase')}>A</span>{' '}
+          <span className={clsx('')}>Mijn naam is</span>{' '}
           <strong
             className={clsx(
-              'font-bold lowercase text-slate-700',
+              'font-bold text-slate-700',
               'dark:text-slate-300'
             )}
           >
-            Front-End Developer
+         Marit van Helden,
           </strong>{' '}
-          who loves intuitive,{' '}
-          <span className={clsx('block')}>clean and modern UI design.</span>
+          mediavormgever die zowel{' '}
+          <span className={clsx('block')}>over technische skills als een krachtig creatief oog beschikt.</span>
         </m.h1>
       </span>
     </div>

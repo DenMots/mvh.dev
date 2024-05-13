@@ -1,4 +1,4 @@
-import bundeAnalyzer from '@next/bundle-analyzer';
+import bundleAnalyzer from '@next/bundle-analyzer';
 import nextMDX from '@next/mdx';
 import rehypePlugins from 'rehype-plugins';
 import remarkPlugins from 'remark-plugins';
@@ -21,7 +21,7 @@ const nextConfig = {
   reactStrictMode: true,
 };
 
-const withBundleAnalyzer = bundeAnalyzer({
+const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === 'true',
 });
 

@@ -1,15 +1,14 @@
-import clsx from 'clsx';
-import { m } from 'framer-motion';
-
 import {
+  CodaIcon,
   FigmaIcon,
   FramerMotionIcon,
   NextJsIcon,
   ReactIcon,
   TailwindCssIcon,
-  TypeScriptIcon,
   VSCodeIcon,
 } from '@/components/Icons';
+import clsx from 'clsx';
+import { m } from 'framer-motion';
 
 const animation = {
   hide: { x: -8, opacity: 0 },
@@ -28,7 +27,7 @@ function HeaderTechStack() {
         animate={animation.show}
         transition={{ delay: 0.6 }}
       >
-        current favorite tech stack/tools:
+        huidige favoriete tools:
       </m.p>
       <m.ul
         className={clsx(
@@ -41,17 +40,7 @@ function HeaderTechStack() {
       >
         <m.li variants={animation}>
           <div className={clsx('transition duration-200 hover:text-[#3178C6]')}>
-            <TypeScriptIcon className={clsx('h-6 w-6')} />
-          </div>
-        </m.li>
-        <m.li variants={animation}>
-          <div className={clsx('transition duration-200 hover:text-[#61DAFB]')}>
-            <ReactIcon className={clsx('h-6 w-6')} />
-          </div>
-        </m.li>
-        <m.li variants={animation}>
-          <div className={clsx('transition duration-200 hover:text-[#06B6D4]')}>
-            <TailwindCssIcon className={clsx('h-6 w-6')} />
+            <CodaIcon className={clsx('h-6 w-6')} />
           </div>
         </m.li>
         <m.li variants={animation}>

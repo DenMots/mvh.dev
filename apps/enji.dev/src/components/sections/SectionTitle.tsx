@@ -1,15 +1,18 @@
 import clsx from 'clsx';
 import Link from 'next/link';
+import type { ReactNode } from 'react';
 
 import { ChevronRightIcon } from '@/components/Icons';
-
-import type { ReactNode } from 'react';
 
 interface SectionTitleProps {
   as?: 'h2' | 'h3';
   title: string;
   caption: string;
   description: string | ReactNode;
+  extraText: string | ReactNode;
+  moreText: string  | ReactNode;
+  extramoreText: string | ReactNode;
+  extraextramoreText: string | ReactNode;
   button?: {
     title: string;
     href: string;
@@ -21,6 +24,10 @@ function SectionTitle({
   title,
   caption,
   description,
+  extraText,
+  moreText,
+  extramoreText,
+  extraextramoreText,
   button = null,
 }: SectionTitleProps) {
   const Heading = as;
@@ -48,6 +55,19 @@ function SectionTitle({
       <p className={clsx('max-w-lg text-slate-600', 'dark:text-slate-400')}>
         {description}
       </p>
+        <p className={clsx('mt-2 max-w-lg text-slate-600', 'dark:text-slate-400')}>
+          {extraText}
+        </p>
+        <p className={clsx('mt-2 max-w-lg text-slate-600', 'dark:text-slate-400')}>
+          {moreText}
+        </p>
+        <p className={clsx('mt-2 max-w-lg text-slate-600', 'dark:text-slate-400')}>
+          {extramoreText}
+        </p>
+        <p className={clsx('mt-2 max-w-lg text-slate-600', 'dark:text-slate-400')}>
+          {extraextramoreText}
+        </p>
+      
       {button && (
         <div className={clsx('mt-4', 'md:mt-6')}>
           <Link href={button.href} className={clsx('button button--soft')}>
